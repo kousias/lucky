@@ -57,9 +57,21 @@
   <p style="font-size:16px; "text-align: justify;">
     Το τρώω το φαγητό μου! Και...
   </p>
-<img src="images/weight.png" width="250">
+<img src="images/weight.png" width="300">
 
 
+<p style="font-size:16px; "text-align: justify;">Scan to open this page</p>
+<div id="qrcode"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
+<script>
+  new QRCode(document.getElementById("qrcode"), {
+    text: "https://kousias.github.io/lucky/",
+    width: 150,
+    height: 150
+  });
+</script>
+  
   <p>Latest update: April 24</p>
 
 </body>
